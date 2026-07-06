@@ -36,7 +36,7 @@ A modern Finance Tracker web application built using HTML, CSS and JavaScript.
 
 ![Expense Chart](images/expense-chart.png)
 
-### Mobike View
+### Mobile View
 
 ![Mobile View](images/mobile-view.png)
 
