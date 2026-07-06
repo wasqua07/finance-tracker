@@ -24,7 +24,21 @@ A modern Finance Tracker web application built using HTML, CSS and JavaScript.
 
 ## 📷 Screenshots
 
-(Add screenshots here after uploading them.)
+### Dashboard (Light Mode)
+
+![Light Mode](images/light-mode.png)
+
+### Dashboard (Dark Mode)
+
+![Dark Mode](images/dark-mode.png)
+
+### Expense Chart
+
+![Expense Chart](images/expense-chart.png)
+
+### Mobike View
+
+![Mobile View](images/mobile-view.png)
 
 
 ## 📂 Folder Structure
