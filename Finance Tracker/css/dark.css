@@ -1,0 +1,64 @@
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+
+body.dark .navbar {
+    background: #1f1f1f;
+}
+
+body.dark .navbar i {
+    background-color: #121212;
+}
+
+body.dark .card,
+body.dark .add-transaction,
+body.dark .search-filter,
+body.dark .transactions,
+body.dark .chart-card {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark input,
+body.dark select {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #444;
+}
+
+body.dark button {
+    color: white;
+}
+
+body.dark .transaction {
+    background: #2b2b2b;
+    border: none;
+}
+
+body.dark input::placeholder {
+    color: #cccccc;
+}
+
+body.dark .transaction h3, p, small {
+    color: white;
+}
+
+body.dark .card h3 {
+    color: white;
+}
+
+body.dark .charts {
+    color: white;
+}
+
+
+body.dark .footer {
+    background: #1f1f1f;
+    color: white;
+}
+
+body.dark .footer p {
+    color: white;
+}

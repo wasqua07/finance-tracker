@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dark.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-wallet"></i>
+            <h2>Finance Tracker</h2>    
+        </div>
+
+        <button id="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <section class="summary">
+
+            <div class="card balance-card">
+                <h3>Total Balance</h3>
+                <h1 id="balance">₹0</h1>
+            </div>
+
+            <div class="card income-card">
+                <h3>Income</h3>
+                <h2 id="income">₹0</h2>
+            </div>
+
+            <div class="card expense-card">
+                <h3>Expense</h3>
+                <h2 id="expense">₹0</h2>
+            </div>
+
+            <div class="card transaction-card">
+                <h3>Total Transactions</h3>
+                <h2 id="count">₹0</h2>
+            </div>
+
+        </section>
+
+        <section class="add-transaction">
+
+            <h2>Add Transaction</h2>
+            <form id="transaction-form">
+
+                <input type="text" id="title" placeholder="Transaction Title" required>
+
+                <input type="number" id="amount" placeholder="Amount" required>
+
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <select id="category">
+
+                    <option>Food</option>
+
+                    <option>Shopping</option>
+
+                    <option>Travel</option>
+
+                    <option>Salary</option>
+
+                    <option>Entertainment</option>
+
+                    <option>Bills</option>
+
+                    <option>Others</option>
+
+                </select>
+
+                <input type="date" id="date">
+
+                <button type="submit" >Add Transaction</button>
+
+            </form>
+
+        </section>
+
+        <section class="search-filter">
+
+            <input type="text" id="search" placeholder="Search transaction...">
+
+            <select id="filter">
+
+                <option value="all">All</option>
+
+                <option value="income">Income</option>
+
+                <option value="expense">Expence</option>
+
+            </select>
+
+        </section>
+
+        <section class="transactions">
+
+            <h2>Recent Transaction</h2>
+
+            <div id="transaction-list">
+
+            </div>
+
+        </section>
+
+        <section class="charts">
+
+            <div class=chart-card>
+
+                <h2>Expense Analysis</h2>
+                <div class="chart-container">
+                    <canvas id="expenseChart"></canvas>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p> © 2026 | Designed & Developed by <strong>Wasqua Imtiaz</strong> ❤️</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
