@@ -41,7 +41,9 @@ body.dark input::placeholder {
     color: #cccccc;
 }
 
-body.dark .transaction h3, p, small {
+body.dark .transaction h3,
+body.dark .transaction p,
+body.dark .transaction small {
     color: white;
 }
 
