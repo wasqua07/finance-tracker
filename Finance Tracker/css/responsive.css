@@ -1,50 +1,33 @@
-@media(max-width:992px) {
-    .summary {
-        grid-template-columns: repeat(2,1fr);
-    }
-    #transaction-form {
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media(max-width:768px){
-    .navbar {
-        padding: 20px;
-    }
-    .summary {
-        grid-template-columns: 1fr;
-    }
-    #transaction-form {
-        grid-template-columns: 1fr;
-    }
-    .search-filter {
-        flex-direction: column;
-    }
-}
-
-/* TABLETS (1024px and below) */
+/* =========================
+   TABLETS
+   1024px and below
+========================= */
 
 @media (max-width: 1024px) {
 
     .container {
         width: 95%;
-        margin: auto;
     }
 
     .summary {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+    .add-transaction form {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .chart-card {
         width: 100%;
     }
-
 }
 
 
-/* MOBILE (768px and below) */
+/* =========================
+   MOBILE
+   768px and below
+========================= */
 
 @media (max-width: 768px) {
 
@@ -60,13 +43,10 @@
     }
 
     .add-transaction form {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
+        grid-template-columns: 1fr;
     }
 
     .search-filter {
-        display: flex;
         flex-direction: column;
         gap: 10px;
     }
@@ -77,7 +57,6 @@
     }
 
     .transaction {
-        display: flex;
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
@@ -86,6 +65,7 @@
     .transaction-right {
         width: 100%;
         text-align: left;
+        margin: 0;
     }
 
     .transaction-right button {
@@ -96,10 +76,13 @@
         width: 100%;
         height: 300px;
     }
-
 }
 
-/* SMALL MOBILE (480px and below) */
+
+/* =========================
+   SMALL MOBILE
+   480px and below
+========================= */
 
 @media (max-width: 480px) {
 
@@ -111,6 +94,14 @@
         font-size: 20px;
     }
 
+    .logo i {
+        font-size: 26px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
     .card h1 {
         font-size: 28px;
     }
@@ -119,8 +110,10 @@
         font-size: 22px;
     }
 
-    .card {
-        padding: 18px;
+    .add-transaction,
+    .transactions,
+    .chart-card {
+        padding: 20px;
     }
 
     input,
@@ -130,12 +123,19 @@
         padding: 10px;
     }
 
+    .transaction {
+        padding: 15px;
+    }
+
     .transaction h3 {
         font-size: 17px;
+    }
+
+    .transaction strong {
+        font-size: 22px;
     }
 
     .chart-container {
         height: 250px;
     }
-
 }
