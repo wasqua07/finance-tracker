@@ -1,6 +1,6 @@
 # 💰 Finance Tracker
 
-A modern Finance Tracker web application built using HTML, CSS and JavaScript.
+A modern and responsive Finance Tracker web application built using HTML, CSS, and JavaScript. It helps users manage income and expenses, track their balance, and visualize spending through an interactive chart.
 
 ## 🚀 Features
 
